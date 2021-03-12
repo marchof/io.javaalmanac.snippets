@@ -1,0 +1,18 @@
+
+
+* Copy Files
+* Copy IO Streams
+* Read Files
+* Read/Write text from files
+* DomainSockets
+
+* Comparing and Sorting Objects
+* Making HTTP Requests
+* Formatting Strings
+* Assert Preconditions
+* Create constant collections
+* Creating constant sets, lists, Maps
+* Aggregating Objects
+* Grouping Objects
+* Avoiding null (Empty collections, Optional)
+
