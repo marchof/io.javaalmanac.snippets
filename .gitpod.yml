@@ -2,4 +2,9 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: mvn package -DskipTests=false
+  - init: mvn verify -DskipTests=false
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-test
