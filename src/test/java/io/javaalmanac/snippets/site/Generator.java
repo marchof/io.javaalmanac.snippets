@@ -32,6 +32,8 @@ public class Generator {
 			%s
 			{{< /sandboxsource >}}
 			{{< /sandbox >}}
+
+			This [snippet at GitHub](%s)
 			""";
 
 	private static List<Function<SnippetSource, String>> VALUE_EXTRACTORS = List.of( //
@@ -41,7 +43,8 @@ public class Generator {
 			SnippetSource::getSince, //
 			SnippetSource::getMainName, //
 			SnippetSource::getSourceName, //
-			SnippetSource::loadPlainSource);
+			SnippetSource::loadPlainSource, //
+			SnippetSource::getGitHubLink);
 
 	private static void addExample(Path srcfile, Path snippetsdir) {
 		try {

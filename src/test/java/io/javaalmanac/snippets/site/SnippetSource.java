@@ -97,6 +97,10 @@ public class SnippetSource {
 		return description;
 	}
 
+	public String getGitHubLink() {
+		return "https://github.com/marchof/io.javaalmanac.snippets/tree/master" + srcpath.toString().substring(1);
+	}
+
 	/**
 	 * Loads the source without JavaDoc
 	 */
