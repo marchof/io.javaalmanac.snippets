@@ -18,11 +18,7 @@
 
 * Method handles
 * Var handles
-
-## time
-
-* All Friday 13th
-* Last friday of the month
+* Type
 
 ## util
 
@@ -49,10 +45,7 @@
 * Sealed Classes
 * Records
 * Annotations
-
-# Functionality
-
-* Add edit link to github
-* Link to Gitpod https://www.gitpod.io/docs/context-urls
+* Default methods
+* var
 
 
