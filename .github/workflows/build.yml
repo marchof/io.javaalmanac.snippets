@@ -19,4 +19,4 @@ jobs:
     - name: Verify Java version
       run: java --version
     - name: Build with Maven
-      run: mvn -B package
+      run: mvn -B package  -Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn
