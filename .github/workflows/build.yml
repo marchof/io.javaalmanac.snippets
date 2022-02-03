@@ -15,7 +15,7 @@ jobs:
     - name: Setup JDK
       uses: actions/setup-java@v1
       with:
-        java-version: 17-ea
+        java-version: 17
     - name: Verify Java version
       run: java --version
     - name: Build with Maven
