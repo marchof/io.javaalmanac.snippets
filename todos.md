@@ -43,7 +43,6 @@
 
 * Lambda
 * Sealed Classes
-* Records
 * Annotations
 * Default methods
 * var
