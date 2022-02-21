@@ -22,7 +22,6 @@
 
 ## util
 
-* Comparing and Sorting Objects
 * Formatting Strings
 * Assert Preconditions
 * Aggregating Objects
