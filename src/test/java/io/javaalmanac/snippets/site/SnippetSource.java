@@ -6,6 +6,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
+import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 import java.util.regex.Pattern;
@@ -30,14 +31,14 @@ import com.sun.source.doctree.UnknownBlockTagTree;
 import com.sun.source.util.DocTreeScanner;
 import com.sun.source.util.DocTrees;
 
+import io.javaalmanac.javadoclink.JavaDocLink;
 import jdk.javadoc.doclet.Doclet;
 import jdk.javadoc.doclet.DocletEnvironment;
 import jdk.javadoc.doclet.Reporter;
 
 public class SnippetSource {
 
-	private static final Set<String> JAVA_VERSIONS = //
-			Set.of("1.4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17");
+	private static final List<String> JAVA_VERSIONS = JavaDocLink.supportedVersions();
 
 	private static final Charset SOURCE_ENCODING = StandardCharsets.UTF_8;
 
@@ -190,7 +191,7 @@ public class SnippetSource {
 
 			@Override
 			public String visitLink(LinkTree node, SnippetSource src) {
-				var link = JavaDocLink.of(node.getReference().toString());
+				var link = JdkDocLink.of(node.getReference().toString());
 				return "[`" + link.getLabel() + "`](" + link.getLink() + ")";
 			}
 
