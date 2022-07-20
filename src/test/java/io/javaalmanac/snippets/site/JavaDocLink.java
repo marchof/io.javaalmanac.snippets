@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 
 class JavaDocLink {
 
-	private static final String JAVADOC_BASE = "https://download.java.net/java/early_access/jdk17/docs/api/";
+	private static final String JAVADOC_BASE = "https://docs.oracle.com/en/java/javase/17/docs/api/";
 
 	private static final String CLASS_LINK = JAVADOC_BASE + "%s/%s.html";
 
