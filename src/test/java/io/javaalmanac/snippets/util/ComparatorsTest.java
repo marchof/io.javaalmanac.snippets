@@ -13,6 +13,7 @@ public class ComparatorsTest {
 				[Cherry, Fig, Mango, Pear, apple]
 				[Fig, Pear, apple, Mango, Cherry]
 				[Cherry, apple, Mango, Pear, Fig]
+				[null, null, a, B, c]
 				Cherry
 				""");
 	}
