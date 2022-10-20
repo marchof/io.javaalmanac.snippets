@@ -49,7 +49,7 @@ public class MethodReferences {
 		Consumer<Foo> consumer = Foo::instanceMethod;
 		consumer.accept(foo);
 
-		// Unbound instance method with oarameter as reference
+		// Unbound instance method with parameter as reference
 		BiConsumer<Foo, String> biconsumer = Foo::instanceMethod;
 		biconsumer.accept(foo, "hello");
 
