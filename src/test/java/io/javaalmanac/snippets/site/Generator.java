@@ -20,7 +20,6 @@ public class Generator {
 	private static final String MD_TEMPLATE = """
 			---
 			title: %s
-			type: sandbox
 			---
 
 			%s
