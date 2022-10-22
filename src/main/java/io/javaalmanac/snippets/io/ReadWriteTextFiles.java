@@ -8,7 +8,7 @@ import java.nio.file.Files;
 /**
  * The {@link java.nio.file.Files} class offers a couple of convenience methods
  * to read and write text content from/to files. When converting between Unicode
- * strings and binary files content a encoding is applied. Do not rely on system
+ * strings and binary files content an encoding is applied. Do not rely on system
  * defaults, always supply an encoding for portable behavior.
  * 
  * @title Read and Write Text Files

@@ -205,7 +205,7 @@ public class SnippetSource {
 
 			@Override
 			public String visitUnknownBlockTag(UnknownBlockTagTree node, SnippetSource src) {
-				switch (node.getTagName().toString()) {
+				switch (node.getTagName()) {
 				case "title":
 					src.title = node.getContent().toString();
 					break;
