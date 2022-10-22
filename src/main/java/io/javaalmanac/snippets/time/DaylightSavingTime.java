@@ -7,8 +7,8 @@ import java.time.zone.ZoneOffsetTransition;
 import java.time.zone.ZoneRules;
 
 /**
- * The Java time API uses the
- * <a href="https://en.wikipedia.org/wiki/Tz_database">tz database</a> to handle DST rules for
+ * The Java time API uses the [tz
+ * database](https://en.wikipedia.org/wiki/Tz_database) to handle DST rules for
  * each time zone. While the typical use case is to convert instants to local
  * times the API also allows to query the database and e.g. list all DST
  * transitions for a specific time zone.
