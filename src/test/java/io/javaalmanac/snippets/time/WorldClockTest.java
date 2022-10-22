@@ -1,10 +1,14 @@
 package io.javaalmanac.snippets.time;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
 import io.javaalmanac.snippets.ConsoleGrabber;
+
+import java.time.ZonedDateTime;
 
 public class WorldClockTest {
 
@@ -15,6 +19,13 @@ public class WorldClockTest {
 		var lines = grabber.lines();
 		assertTrue(lines.size() > 500);
 		lines.stream().reduce(this::assertOrder);
+	}
+
+	@Test
+	void test_format() {
+		ZonedDateTime dateTime = ZonedDateTime.parse("2007-12-31T12:01:02+01:00[Europe/Warsaw]");
+		String actual = WorldClock.format(dateTime);
+		assertEquals("Europe/Warsaw                    Mon, 2007-12-31 12:01:02  +01:00  ", actual);
 	}
 
 	String assertOrder(String l1, String l2) {
