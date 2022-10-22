@@ -12,7 +12,7 @@ import java.time.zone.ZoneRules;
  * each time zone. While the typical use case is to convert instants to local
  * times the API also allows to query the database and e.g. list all DST
  * transitions for a specific time zone.
- * 
+ *
  * @title Daylight Saving Time
  * @category api.time
  * @since 8

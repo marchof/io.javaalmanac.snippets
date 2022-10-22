@@ -8,7 +8,7 @@ import java.util.Optional;
  * to express the possibility that a method may not return a value, for example
  * {@link java.util.stream.Stream#max(java.util.Comparator)} may not have a
  * return value on an empty stream.
- * 
+ *
  * The `Optional` type is designed to be used in a functional way: It owns the
  * control flows, we simply declare what to do if a value is present or missing.
  * If you find yourself writing code like `if (optional.isPresent()) { ... }` or
