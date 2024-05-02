@@ -2,8 +2,6 @@
 
 ## io
 
-* Copy Files
-* Copy IO Streams
 * traverse file system structure
 
 ## lang
@@ -27,6 +25,7 @@
 * Aggregating Objects
 * Grouping Objects
 * Avoiding null (Empty collections, Optional)
+* Regex/Matcher
 
 ## security
 
