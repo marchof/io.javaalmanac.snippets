@@ -5,8 +5,8 @@ import io.javaalmanac.javadoclink.JavaDocLink;
 class JdkDocLink {
 
 	private static final JavaDocLink JAVADOC = JavaDocLink //
-			.forVersion("17") //
-			.withBaseUrl("https://docs.oracle.com/en/java/javase/17/docs/api/");
+			.forVersion("21") //
+			.withBaseUrl("https://docs.oracle.com/en/java/javase/21/docs/api/");
 
 	private final String label;
 	private final String link;
