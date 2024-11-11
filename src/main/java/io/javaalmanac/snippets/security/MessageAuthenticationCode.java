@@ -8,11 +8,12 @@ import javax.crypto.Mac;
 import javax.crypto.SecretKey;
 
 /**
- * A message authentication code (MAC) is calculated based with a secret key.
- * Only owners of this secret key can calculate and verify the authentication
- * code. Because the secret key cannot be derived from the generated hash this
- * is a secure method to e.g. sign API calls which are transmitted over unsafe
- * transport channels, like verification links sent via email.
+ * A message authentication code ({@link javax.crypto.Mac}) is calculated for a
+ * piece of information using a secret key. Only owners of this secret key can
+ * calculate and verify the authentication code. Because the secret key cannot
+ * be derived from the generated hash this is a secure method to e.g. sign API
+ * calls which are transmitted over unsafe transport channels, like verification
+ * links sent via email.
  * 
  * @title Message Authentication Code
  * @category api.security
