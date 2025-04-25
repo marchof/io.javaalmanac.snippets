@@ -14,6 +14,7 @@ public class MethodReferencesTest {
 				instanceMethod
 				instanceMethod hello
 				classMethod
+				classMethodWithReturn hello
 				42
 				""");
 	}
