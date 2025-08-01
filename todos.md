@@ -18,24 +18,29 @@
 * Var handles
 * Type
 
-## util
+## text
 
 * Formatting Strings
+* Regex/Matcher
+* HexFormst
+
+## util
+
 * Assert Preconditions
 * Aggregating Objects
 * Grouping Objects
-* Avoiding null (Empty collections, Optional)
-* Regex/Matcher
 
 ## security
 
 * Hashes
-* Signatures
 * Encryption
+* Random
+* KEM
+* KDF
 
 ## time
 
-* String formatting & parsing
+* Formatting & parsing
 
 # Language
 
