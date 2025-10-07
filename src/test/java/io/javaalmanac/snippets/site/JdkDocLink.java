@@ -6,7 +6,7 @@ class JdkDocLink {
 
 	private static final JavaDocLink JAVADOC = JavaDocLink //
 			.forVersion("21") //
-			.withBaseUrl("https://docs.oracle.com/en/java/javase/21/docs/api/");
+			.withBaseUrl("https://docs.oracle.com/en/java/javase/25/docs/api/");
 
 	private final String label;
 	private final String link;

@@ -26,7 +26,7 @@ public class Generator {
 
 			Since [Java %s](/jdk/%s/)
 
-			{{< sandbox version="java21" mainclass="%s" >}}
+			{{< sandbox version="java25" mainclass="%s" >}}
 			{{< sandboxsource "%s" >}}
 			%s
 			{{< /sandboxsource >}}
