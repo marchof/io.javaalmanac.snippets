@@ -40,7 +40,7 @@ public class MethodReferences {
 
 	}
 
-	public static void main(String[] args) {
+	void main() {
 
 		// Constructor as reference
 		Supplier<Foo> supplier = Foo::new;

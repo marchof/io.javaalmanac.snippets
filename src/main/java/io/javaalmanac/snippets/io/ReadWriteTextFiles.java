@@ -8,8 +8,8 @@ import java.nio.file.Files;
 /**
  * The {@link java.nio.file.Files} class offers a couple of convenience methods
  * to read and write text content from/to files. When converting between Unicode
- * strings and binary files content an encoding is applied. Do not rely on system
- * defaults, always supply an encoding for portable behavior.
+ * strings and binary files content an encoding is applied. Do not rely on
+ * system defaults, always supply an encoding for portable behavior.
  * 
  * @title Read and Write Text Files
  * @category api.io
@@ -19,7 +19,7 @@ public class ReadWriteTextFiles {
 
 	static final String TEST_CONTENT = "Line 1\nLine 2\nLine 3\n";
 
-	public static void main(String... args) throws IOException {
+	void main() throws IOException {
 
 		var file = Files.createTempFile("ReadWriteTextFiles", ".txt");
 

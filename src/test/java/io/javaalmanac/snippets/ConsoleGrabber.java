@@ -11,8 +11,8 @@ import org.junit.jupiter.api.Assertions;
 
 public class ConsoleGrabber {
 
-	public interface MainMethod {
-		void main(String... args) throws Exception;
+	public interface MainMethod<T> {
+		void main(T instance) throws Exception;
 	}
 
 	private static final Charset ENC = StandardCharsets.UTF_8;
@@ -21,11 +21,14 @@ public class ConsoleGrabber {
 
 	private final PrintStream out = new PrintStream(content, false, ENC);
 
-	public void run(MainMethod main) throws Exception {
+	@SafeVarargs
+	public final <T> void run(MainMethod<T> main, T... type) throws Exception {
 		PrintStream origout = System.out;
 		System.setOut(out);
 		try {
-			main.main();
+			@SuppressWarnings("unchecked")
+			T instance = (T) type.getClass().getComponentType().getConstructor().newInstance();
+			main.main(instance);
 			out.flush();
 		} finally {
 			System.setOut(origout);
@@ -44,9 +47,10 @@ public class ConsoleGrabber {
 		Assertions.assertEquals(expected, content());
 	}
 
-	public static void assertOutEquals(MainMethod main, String expected) throws Exception {
+	@SafeVarargs
+	public static <T> void assertOutEquals(MainMethod<T> main, String expected, T... type) throws Exception {
 		ConsoleGrabber grabber = new ConsoleGrabber();
-		grabber.run(main);
+		grabber.run(main, type);
 		grabber.assertOutEquals(expected);
 	}
 

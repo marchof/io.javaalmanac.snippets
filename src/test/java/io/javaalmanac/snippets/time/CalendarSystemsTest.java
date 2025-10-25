@@ -9,11 +9,11 @@ public class CalendarSystemsTest {
 	@Test
 	void run_main() throws Exception {
 		ConsoleGrabber.assertOutEquals(CalendarSystems::main, """
-				Hijrah-umalqura AH 1443-02-07
-				2021-09-14
-				Japanese Reiwa 3-09-14
-				Minguo ROC 110-09-14
-				ThaiBuddhist BE 2564-09-14
+				Hijrah-umalqura AH 1447-03-24
+				2025-09-16
+				Japanese Reiwa 7-09-16
+				Minguo ROC 114-09-16
+				ThaiBuddhist BE 2568-09-16
 				""");
 	}
 

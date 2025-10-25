@@ -40,7 +40,7 @@ public class Records {
 
 	}
 
-	public static void main(String[] args) {
+	void main() {
 
 		var p = new Point(3, 5);
 
