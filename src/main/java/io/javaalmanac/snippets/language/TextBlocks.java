@@ -20,9 +20,9 @@ public class TextBlocks {
 				"World"!
 				""";
 
-		System.out.println(greeting);
+		IO.println(greeting);
 
-		System.out.println(LINK_TEMPLATE.formatted("https://javaalmanac.io/"));
+		IO.println(LINK_TEMPLATE.formatted("https://javaalmanac.io/"));
 	}
 
 }

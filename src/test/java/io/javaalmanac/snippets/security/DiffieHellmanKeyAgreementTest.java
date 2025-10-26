@@ -14,7 +14,7 @@ public class DiffieHellmanKeyAgreementTest {
 		grabber.run(DiffieHellmanKeyAgreement::main);
 		var lines = grabber.lines();
 		assertEquals(2, lines.size());
-		assertEquals(lines.get(0), lines.get(1));
+		assertEquals(lines.get(0).split(":\\W+")[1], lines.get(1).split(":\\W+")[1]);
 	}
 
 }
